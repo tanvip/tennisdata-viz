@@ -1,0 +1,112 @@
+#chart {
+  background: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+text {
+  pointer-events: none;
+}
+
+.grandparent text {
+  text-decoration: underline;
+}
+
+rect {
+  fill: none;
+  stroke: #fff;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+rect.parent {
+    pointer-events: none;
+}
+
+.grandparent rect {
+  fill: #00FFE7;
+}
+
+.grandparent:hover rect {
+  fill: #00CFC1;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.parent {
+  fill: #FE621D;
+  fill-opacity: .5;
+}
+
+.children:hover rect.child {
+  fill: #FE621D;
+}
+path {
+  fill:none;
+  stroke-width: 1;
+}
+.data1y1 {
+				stroke: steelblue;
+			}
+      .data2y1 {
+      				stroke: #ff6600;
+      			}
+			.data2y2 {
+				stroke: orange;
+			}
+      .data1y2 {
+				stroke: steelblue;
+			}
+
+			.axis {
+			  shape-rendering: crispEdges;
+			}
+
+			.x.axis line {
+			  stroke: lightgrey;
+			}
+
+			.x.axis .minor {
+			  stroke-opacity: .5;
+			}
+
+			.x.axis path {
+			  display: none;
+			}
+
+			.x.axis text {
+				font-size: 10;
+			}
+      .tick text {
+				font-size: 10;
+			}
+
+			.y.axis line, .y.axis path {
+			  fill: none;
+			  stroke: #000;
+			}
+
+			.y.axis text {
+				font-size: 14;
+			}
+
+			.y.axisRight text {
+				fill: orange;
+			}
+
+			.y.axisLeft text {
+				fill: steelblue;
+			}
+      }
